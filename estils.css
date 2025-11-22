@@ -79,6 +79,7 @@
   box-shadow: 0 10px 30px rgba(0,0,0,0.15);
 }
 .imagen-tarjeta {
+  position: relative;
   height: 180px;
   background-size: cover;
   background-position: center;
@@ -191,4 +192,35 @@
 }
 .t-ease-in-out {
   transition-timing-function: ease-in-out;
+}
+.imagen-tarjeta::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.45s ease;
+  pointer-events: none;
+}
+.tarjeta:hover .imagen-tarjeta::after {
+  opacity: 1;
+}
+.tarjeta:hover .imagen-tarjeta {
+  transform: scale(1.05);
+}
+.tarjeta:nth-child(1) .imagen-tarjeta::after {
+  background-image: url('assets/img/playa1_.jpg');
+}
+.tarjeta:nth-child(2) .imagen-tarjeta::after {
+  background-image: url('assets/img/plaay2_.jpg');
+}
+.tarjeta:nth-child(3) .imagen-tarjeta::after {
+  background-image: url('assets/img/playa3_.jpg');
+}
+.tarjeta:nth-child(4) .imagen-tarjeta::after {
+  background-image: url('assets/img/playa4_.jpg');
+}
+.tarjeta:nth-child(5) .imagen-tarjeta::after {
+  background-image: url('assets/img/playa5_.jpg');
 }
