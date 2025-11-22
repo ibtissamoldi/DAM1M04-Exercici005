@@ -104,3 +104,45 @@
     margin-left: auto;
     margin-right: auto;
 }
+.nav-b {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.25);
+    padding: 13px 24px;
+}
+.nav-b nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  margin: 0;
+}
+.enlaces-nav {
+    list-style: none;
+    display: flex;
+    gap: 19px;
+    margin: 0;
+    padding: 0;
+}
+.enlaces-nav a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  padding: 6px 13px;
+  border-radius: 6px;
+  transition: background-color 0.3s, letter-spacing 0.3s;
+}
+.enlaces-nav a:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  letter-spacing: 1px;
+}
+.enlaces-nav .inicio {
+  background-color: rgba(255, 255, 255, 0.5);
+  font-weight: 600;
+}
