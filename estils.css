@@ -39,7 +39,7 @@
 .hero-imagen {
     flex: 1;
     min-height: 220px;
-    background-image: url('/assets/img/tropical-playa-hero.jpg');
+    background-image: url('assets/img/tropical-playa-hero.jpg');
     background-size: cover;
     background-position: center;
     border-radius: 12px;
@@ -64,6 +64,15 @@
   overflow: hidden;
   box-shadow: 0 6px 18px rgba(0,0,0,0.1);
   transition: transform 0.3s, box-shadow 0.3s;
+}
+.t-linear {
+  transition-timing-function: linear;
+}
+.t-ease {
+  transition-timing-function: ease;
+}
+.t-ease-in {
+  transition-timing-function: ease-in;
 }
 .tarjeta:hover {
   transform: translateY(-6px) scale(1.03);
@@ -133,7 +142,7 @@
   text-decoration: none;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  color: #ffffff;
+  color: #00C2B8;
   padding: 6px 13px;
   border-radius: 6px;
   transition: background-color 0.3s, letter-spacing 0.3s;
@@ -146,12 +155,40 @@
   background-color: rgba(255, 255, 255, 0.5);
   font-weight: 600;
 }
-.t-linear {
-  transition-timing-function: linear;
+#menu-secundario {
+  text-align: center;
+  padding: 48px 16px
 }
-.t-ease {
-  transition-timing-function: ease;
+
+#menu-secundario h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 29px;
+  margin-bottom: 24px;
 }
-.t-ease-in {
-  transition-timing-function: ease-in;
+.submenu {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.submenu a {
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  color: #005f73;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 10px 19px;
+  border-radius: 8px;
+  transition: color 0.3s ease, background-color 0.3s ease, letter-spacing 0.3s ease;
+  font-weight: 500;
+}
+.submenu a:hover {
+  background-color: #94d2bd;
+  color: #001219;
+  letter-spacing: 1px;
+}
+.t-ease-out {
+  transition-timing-function: ease-out;
+}
+.t-ease-in-out {
+  transition-timing-function: ease-in-out;
 }
