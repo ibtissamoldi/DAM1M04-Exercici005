@@ -252,6 +252,19 @@
     font-size: 38px;
   }
 }
+.contenido {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 16px;
+    text-align: center;
+}
+
+.contenido h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    color: #0077b6;
+    margin-bottom: 12px;
+}
 .loader {
     display: flex;
     justify-content: center;
@@ -275,4 +288,29 @@
 @keyframes pulsar {
     from { transform: scale(1); }
     to { transform: scale(1.3); }
+}
+.bloque-animado {
+    width: 120px;
+    height: 120px;
+    margin: 40px auto;
+    background-color: #00C2B8;
+    border-radius: 16px;
+    animation: animacionPrincipal 3s infinite alternate;
+}
+@keyframes animacionPrincipal {
+    0% {
+        transform: translateY(0) rotate(0deg) scale(1);
+        opacity: 0.6;
+        background-color: #00C2B8;
+    }
+    50% {
+        transform: translateY(-30px) rotate(180deg) scale(1.2);
+        opacity: 0.9;
+        background-color: #FFD166;
+    }
+    100% {
+        transform: translateY(0) rotate(360deg) scale(1);
+        opacity: 0.6;
+        background-color: #06D6A0;
+    }
 }
