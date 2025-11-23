@@ -467,6 +467,7 @@ body {
     transform: translateY(-4px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.12);
     background-color: #06D6A0;
+    color: hsl(43, 100%, 70%);
 }
 
 .material-symbols-outlined {
