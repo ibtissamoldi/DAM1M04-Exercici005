@@ -228,3 +228,27 @@
 .tarjeta:nth-child(5) .imagen-tarjeta::after {
   background-image: url('assets/img/playa5_.jpg');
 }
+.hero {
+  flex-direction: column;
+  padding: 16px;
+}
+.tarjetas-contenido .tarjeta {
+  flex: 1 1 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+    padding: 32px;
+  }
+
+  .tarjetas-contenido .tarjeta {
+    flex: 1 1 250px;
+    max-width: 300px;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+}
