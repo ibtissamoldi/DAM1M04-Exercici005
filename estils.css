@@ -4,7 +4,9 @@
     box-sizing: border-box;
 }
 body {
-    background-color:rgb(199, 246, 246)
+    background-color:rgb(199, 246, 246);
+    font-size: 1rem;
+    color: #162a4a;
 }
 .hero {
   display: flex;
@@ -415,29 +417,34 @@ body {
 .tipografia h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 38px;
-    margin-bottom: 12px;
+    font-size: 2.375rem;
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.05rem;
 }
 
 .tipografia h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: 32px;
-    margin-bottom: 12px;
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.04rem;
 }
 
 .tipografia h3 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 28px;
-    margin-bottom: 12px;
+    font-size: 1.75rem;
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.03rem;
 }
 .tipografia p {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 1.5;
-    margin-bottom: 32px;
+    color: #162a4a;
+    margin-bottom: 2rem;
+    letter-spacing: 0.02rem;
 }
 
 .btn-icon {
