@@ -295,22 +295,32 @@
     margin: 40px auto;
     background-color: #00C2B8;
     border-radius: 16px;
-    animation: animacionPrincipal 3s infinite alternate;
+    animation: bounceAndSpin 3s infinite alternate;
 }
-@keyframes animacionPrincipal {
+@keyframes bounceAndSpin {
     0% {
         transform: translateY(0) rotate(0deg) scale(1);
         opacity: 0.6;
         background-color: #00C2B8;
     }
+    25% {
+        transform: translateY(-20px) rotate(90deg) scale(1.1);
+        opacity: 0.8;
+        background-color: #FFD166;
+    }
     50% {
-        transform: translateY(-30px) rotate(180deg) scale(1.2);
-        opacity: 0.9;
+        transform: translateY(-40px) rotate(180deg) scale(1.2);
+        opacity: 1;
+        background-color: #06D6A0;
+    }
+    75% {
+        transform: translateY(-20px) rotate(270deg) scale(1.1);
+        opacity: 0.8;
         background-color: #FFD166;
     }
     100% {
         transform: translateY(0) rotate(360deg) scale(1);
         opacity: 0.6;
-        background-color: #06D6A0;
+        background-color: #00C2B8;
     }
 }
