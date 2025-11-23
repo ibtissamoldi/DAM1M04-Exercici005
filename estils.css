@@ -91,6 +91,10 @@
 .tarjeta h3 {
     margin: 13px;
     font-family: 'Montserrat', sans-serif;
+    transition: color 0.25s ease;
+}
+.tarjeta:hover h3 {
+    color: #00C2B8;
 }
 .tarjeta p {
     margin: 0 13px 16px;
