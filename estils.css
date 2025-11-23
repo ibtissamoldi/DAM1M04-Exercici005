@@ -252,3 +252,27 @@
     font-size: 38px;
   }
 }
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    margin: 40px 0;
+}
+
+.sol {
+    width: 50px;
+    height: 50px;
+    background: #FFD166;
+    border-radius: 50%;
+    animation: girar 1.5s linear infinite, pulsar 1.2s ease-in-out infinite alternate;
+}
+@keyframes girar {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes pulsar {
+    from { transform: scale(1); }
+    to { transform: scale(1.3); }
+}
