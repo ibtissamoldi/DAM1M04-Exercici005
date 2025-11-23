@@ -1,3 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color:rgb(199, 246, 246)
+}
 .hero {
   display: flex;
   align-items: center;
@@ -252,6 +260,27 @@
     font-size: 38px;
   }
 }
+.contenido {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 16px;
+    text-align: center;
+}
+
+.contenido h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    color: #0077b6;
+    margin-bottom: 12px;
+}
+
+.contenido p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #023e8a;
+    line-height: 1.5;
+    margin-bottom: 32px;
+}
 .loader {
     display: flex;
     justify-content: center;
@@ -259,10 +288,9 @@
     height: 200px;
     margin: 40px 0;
 }
-
 .sol {
-    width: 50px;
-    height: 50px;
+    width: 120px;
+    height: 120px;
     background: #FFD166;
     border-radius: 50%;
     animation: girar 1.5s linear infinite, pulsar 1.2s ease-in-out infinite alternate;
@@ -376,4 +404,68 @@
         width: 90px;
         height: 90px;
     }
+}
+.estilo-contenido {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 16px;
+    text-align: center;
+}
+
+.tipografia h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.tipografia h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.tipografia h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.tipografia p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 32px;
+}
+
+.btn-icon {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #00C2B8;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.25s, box-shadow 0.25s, background-color 0.25s;
+    margin: 8px;
+}
+
+.btn-icon:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    background-color: #06D6A0;
+}
+
+.material-symbols-outlined {
+    font-variation-settings: 
+        'wght' 400,
+        'FILL' 0,
+        'opsz' 24;
 }
